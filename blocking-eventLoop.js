@@ -12,9 +12,9 @@ function doSomething(duration) {
 if (cluster.isMaster) {
   // Cause index.js to be executed *again* but in child mode
   cluster.fork();
-  cluster.fork();
-  cluster.fork();
-  cluster.fork();
+//   cluster.fork();
+//   cluster.fork();
+//   cluster.fork();
 
 } else {
   // I am a child and I am going to act as server
